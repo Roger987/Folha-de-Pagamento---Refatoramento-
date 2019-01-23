@@ -1,7 +1,7 @@
 # Folha-de-Pagamento---Refatoramento-
 Projeto de Software - Folha de Pagamento - Refatoramento 
 
-- Funcionalidades: 
+Funcionalidades: 
      
      - Adição de novos empregados; 
       
@@ -24,7 +24,7 @@ Projeto de Software - Folha de Pagamento - Refatoramento
       - Criar nova agenda de pagamento, ou seja, pode-se alterar a frequência de pagamento entre mensal e semanal e 
          escolher o dia que deseja ser pago com base nessa nova agenda.
       
- - Classes:
+ Classes:
  
       1) Funcionários:
             
@@ -32,7 +32,7 @@ Projeto de Software - Folha de Pagamento - Refatoramento
             
             Solução: Uma superclasse abstrata, que tem como atributos informaçes gerais como nome, endereço,
                      identificação no sistema, salário, método de pagamento, a pertinência ao sindicato, taxa sindical,
-                     identificação no sindicato e taxa de serviço. Possui como métodos um construtor, o método alterarInformações
+                     identificação no sindicato e taxa de serviço. Possui como métodos um construtor, o método      alterarInformações
                      que edita informações sobre um usuário, e ainda um método abstrato getSalario para que suas subclasses 
                      retornassem o salário da forma específica a cada uma.
             
@@ -81,7 +81,7 @@ Projeto de Software - Folha de Pagamento - Refatoramento
         5) AgendaNova:
              
              Motivação: A necessidade de uma subclasse auxiliar de Funcionários para tratar a funcionalidade do programa 
-             de criar uma nova agenda de pagamento.
+              de criar uma nova agenda de pagamento.
              
              Solução: Uma subclasse de Funcionários, com os atributos frequencia, que guarda a nova frequencia na qual
                       o funcionário deseja ser pago, e dia, que guarda o dia, do mês ou da semana a depender da frequencia,
@@ -97,7 +97,7 @@ Projeto de Software - Folha de Pagamento - Refatoramento
               Solução: Uma classe com a main, onde se dá todo o funcionamento do sistema. 
              
             
-- Distribuição dos métodos:
+Distribuição dos métodos:
 
         Motivação: Eram necessários um método que batesse o cartão de ponto, um método que lançasse o resultado de vendas,
                     um método que alterasse informações sobre um determinado usuário, um que calculasse o salário de 
