@@ -3,26 +3,30 @@ Projeto de Software - Folha de Pagamento - Refatoramento
 
 Funcionalidades: 
      
-     - Adição de novos empregados; 
+     - Adição de novos empregados: implementada na main, cria funcionário e adiciona num ArrayList; 
       
-      - Remoção de empregados; 
+      - Remoção de empregados: implementada na main, remove o funcionário do ArrayList; 
       
-      - Lançar cartão de ponto para empregados horistas;
+      - Lançar cartão de ponto: utiliza o método CartaoDePonto que conta as horas que um funcionario trabalhou num dia
+                                   e guarda essa quantidade de horas para que sejam utilizadas no cálculo do salário;
       
-      - Lançar um resultado de venda de um empregado comissionado; 
+      - Lançar um resultado de venda: utiliza o método ResultadoDeVenda que acumula o valor de cada resultado de venda
+                                        em atributos próprios da classe Comissionado para que esse valor seja utilizado
+                                        no cálculo do salário;
+
+      - Alterar detalhes sobre um empregado: utiliza o método AlterarInformações, que edita informações sobre um usuário, 
+                                             exceto o tipo de funcionario, e está na classe Funcionarios, para alterar
+                                             o tipo de funcionario a implementação está direto na main;
       
-      - Alterar detalhes sobre um empregado;
+      - Rodar a folha de pagamento: implementação na main, o sistema inicia no dia atual e a cada rodagem da folha de                                           pagamento, um dia é incrementado, mostra os funcionários que devem ser pagos naquele                                         dia; 
       
-      - Rodar a folha de pagamento para o dia atual no sistema(o sistema inicia no dia atual e a cada rodagem da folha de 
-         pagamento, um dia é incrementado); 
+      - Desfazer/refazer operações: implementação na main, guarda numa pilha o estado anterior, e em outra o estado antes do                                     undo, e troca os estados quando necessario; 
       
-      - Desfazer/refazer operações; 
+      - Mostrar a agenda de pagamento do mês, com cada funcionário dividido em semanal, mensal ou bisemanal: 
+                                      implementação na main; 
       
-      - Mostrar a agenda de pagamento do mês, com cada funcionário dividido em
-         semanal, mensal ou bisemanal; 
-      
-      - Criar nova agenda de pagamento, ou seja, pode-se alterar a frequência de pagamento entre mensal e semanal e 
-         escolher o dia que deseja ser pago com base nessa nova agenda.
+      - Criar nova agenda de pagamento: implemetação na main, pode-se alterar a frequência de pagamento entre mensal e                                               semanal e escolher o dia que deseja ser pago com base nessa nova agenda.
+      (Obs: Todas funcionando.)
       
  Classes:
  
